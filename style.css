@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(255, 254, 254);
+    font-size: 1.2rem;
+}
+
+.containerrr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.linkler a {
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+    font-size: 22px;
+}
+
+.linkler a:hover {
+    color: #ac9d9d;
+
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+}
+
+.resim-container ul {
+    display: flex;
+    justify-content: center;
+    transform: none;
+    list-style-type: none;
+}
+
+.resim-container {
+    width: 100%;
+}
+
+.resim-container img {
+    width: 200px;
+    height: 300px;
+    margin: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Geçiş efekti ekleniyor */
+}
+
+.resim-container img:hover {
+    transform: scale(1.1); /* Resimlerin %10 büyümesi sağlanıyor */
+    padding: 5px;
+}
+
+
+/* iletisim sayfasındaki form */
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+    border: none solid white;
+    border-radius: 20px;
+    width: 400px;
+    padding: 30px;
+    background-color: white;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin-top: 130px;
+}
+
+.table-container {
+
+    padding: 20px;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    /*text-align: center; !* Metni yatayda ortalar *!*/
+}
+
+.table img {
+    width: 600px;
+    border-radius: 30px;
+}
+
+.form input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    border-color: green;
+}
+
+.form input::placeholder {
+    padding: 10px;
+}
+
+.form textarea {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    border-color: green;
+}
+
+.form textarea::placeholder {
+    padding: 10px;
+}
+
+.btn {
+    border-color: green;
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid green;
+}
+
+
+.iletisimmain {
+    background-image: url(./img/çiçek2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+
+}
+
+
+.tel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.tel p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+.tel img {
+    width: 700px;
+    height: 600px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+
+
+.tel2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.tel2 p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+.tel2 img {
+    width: 700px;
+    height: 600px;
+    margin-right: 30px;
+    border-radius: 20px;
+}
+
+
+.foto img {
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    margin-left: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.general-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation {
+    background-color: #ad835b;
+    width: 100%;
+    height: 100px;
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.logo-controller {
+    margin-right: 50px;
+}
+
+.menu-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link {
+    padding: 40px 15px 0 5px;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+    font-size: 18px;
+}
+
+.page-header {
+    text-align: center;
+    padding: 30px 0 15px;
+
+}
+
+.tel-mobile-img {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .general-container {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .navigation {
+        height: auto;
+        padding-bottom: 15px;
+    }
+
+    .navigation-links {
+        display: block;
+    }
+
+    .logo-controller {
+        margin: 0 auto;
+    }
+
+    .logo-controller img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .menu-links {
+        padding-left: 30px;
+        display: block;
+    }
+
+    .link {
+        padding-top: 20px;
+    }
+
+    .tel {
+        display: block;
+        padding: 30px;
+    }
+
+    .tel p {
+        margin-bottom: 15px;
+    }
+
+    .tel img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        margin-left: 0;
+    }
+
+    .tel-mobile-img {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .tel-desktop-img {
+        display: none;
+    }
+}
